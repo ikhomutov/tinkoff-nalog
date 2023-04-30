@@ -1,0 +1,4 @@
+tinkoff-investments
+selenium
+python-dotenv
+ipdb
