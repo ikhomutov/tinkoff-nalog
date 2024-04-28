@@ -18,7 +18,7 @@ class APIFetcher:
         self.token = os.getenv("TINKOFF_TOKEN")
         self.account_id = os.getenv("TINKOFF_ACCOUNT_ID")
         year = int(os.getenv("YEAR"))
-        self.date_from = datetime(year, 1, 2, 0, 0, tzinfo=UTC)
+        self.date_from = datetime(year, 1, 1, 0, 0, tzinfo=UTC)
         self.date_to = datetime(year, 12, 31, 23, 59, tzinfo=UTC)
 
     def _get_div_foreign_issuer_report_kwargs(self, task_id, page=0):
